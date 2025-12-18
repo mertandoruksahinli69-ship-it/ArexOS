@@ -1,0 +1,49 @@
+# ArexOS – Informational Guide
+
+**ArexOS** is a minimal, modular, and educational operating system simulation designed to bring a Linux-like experience to Windows.  
+Developed primarily for learning and experimentation, ArexOS runs on Windows and features a kernel written in C with support for Python, Java, and EXE drivers.
+
+---
+
+## Core Features
+
+- **Minimal Kernel:** Written in C, handling basic system operations.
+- **Driver Support:** Python, Java, and EXE modules can be integrated.
+- **File Management:** Python GUI application for browsing and managing files.
+- **GUI Applications:** Notepad, File Explorer, and Webcam apps included.
+- **Modular Structure:** Separate kernel, driver, and application files for easy extension.
+- **Educational Focus:** Designed to teach system-level programming and modular OS architecture.
+
+---
+
+## Getting Started
+
+1. Download the `ArexOS` folder to your Windows machine.
+2. Open PowerShell and navigate to the `system32` folder:
+
+```powershell
+cd "C:\Users\<username>\OneDrive\Desktop\ArexOS\system32"
+gcc main.c py_driver.c java_driver.c exe_driver.c -o arexos.exe -mconsole
+.\arexos.exe
+system32/
+├─ asm/       → Assembly scripts
+├─ config/    → Configuration files
+├─ efi/       → EFI and boot files
+├─ FILES/     → Applications and modules
+├─ main.c     → Kernel entry point
+├─ driver.h   → Driver definitions
+├─ py_driver.c → Python module
+├─ java_driver.c → Java module
+├─ exe_driver.c → EXE module
+Contributing
+
+Improve or extend the kernel, drivers, and GUI modules.
+
+Modular design makes it easy to test new features.
+
+Share your contributions to make ArexOS more capable!
+
+License
+
+This project is licensed under the MIT License.
+You can use, modify, and distribute the software freely, as long as the original copyright and license notice are included.

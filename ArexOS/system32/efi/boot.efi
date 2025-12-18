@@ -1,0 +1,4 @@
+[Boot]
+OS=ArexOS
+Version=0.1.0
+Kernel=kernel.asm
